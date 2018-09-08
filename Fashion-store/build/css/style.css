@@ -54,10 +54,10 @@ figure {
 .btn:focus {
   outline: none;
 }
-svg {
+.clothing__grade svg {
   fill: #ffc861;
 }
-svg:last-child {
+.clothing__grade svg:last-child {
   fill: none;
   stroke: grey;
 }
