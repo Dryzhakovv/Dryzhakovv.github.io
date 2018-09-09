@@ -62,7 +62,7 @@ figure {
   stroke: grey;
 }
 section:not(.quick-links):not(.main-banner) {
-  background: url(../img/section-bg.webp) no-repeat;
+  background: url(../img/section-bg.jpg) no-repeat;
 }
 @media (max-width: 1550px) {
   section:not(.quick-links):not(.main-banner) {
@@ -235,6 +235,7 @@ section:not(.quick-links):not(.main-banner):nth-child(7) {
   display: flex;
   justify-content: space-around;
   padding: 50px 0;
+  flex-wrap: wrap;
 }
 .quick-links__pointer svg {
   padding-left: 10px;
