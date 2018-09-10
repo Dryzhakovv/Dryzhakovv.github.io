@@ -30,11 +30,13 @@ body {
   color: #444;
   font-size: 15px;
   font-family: Gotham Book, 'Arial', sans-serif;
+  min-width: 1200px;
 }
 figure {
   margin: 0;
 }
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -195,6 +197,10 @@ section:not(.quick-links):not(.main-banner):nth-child(7) {
   color: white;
 }
 .main-banner__heading {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   padding-top: 145px;
   margin: 0;
   font-family: 'Gotham Bold', "Arial", sans-serif;
@@ -232,16 +238,16 @@ section:not(.quick-links):not(.main-banner):nth-child(7) {
   font-size: 42px;
 }
 .quick-links__wrapper {
-  display: flex;
-  justify-content: space-around;
-  padding: 50px 0;
-  flex-wrap: wrap;
+  padding: 50px 0px;
 }
 .quick-links__pointer svg {
   padding-left: 10px;
 }
 .quick-links__category,
 .quick-links__pointer {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 10px;
   font-family: 'Gotham Medium', "Arial", sans-serif;
   color: #444;
   text-decoration: none;
@@ -290,15 +296,6 @@ section:not(.quick-links):not(.main-banner):nth-child(7) {
 .clothing__wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-.clothing__card {
-  flex-basis: 270px;
-}
-.clothing__wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 .clothing__btn {
   color: white;
@@ -371,7 +368,6 @@ section:not(.quick-links):not(.main-banner):nth-child(7) {
   display: flex;
   justify-content: space-between;
   padding-bottom: 60px;
-  flex-wrap: wrap;
 }
 .blog__heading {
   padding-top: 40px;
@@ -418,6 +414,7 @@ footer {
   margin-top: 25px;
 }
 .footer__main-info {
+  padding-top: 50px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 50px;
 }
@@ -430,9 +427,9 @@ footer {
 }
 .footer__logo {
   position: relative;
-  top: 65px;
+  top: -75px;
   max-width: 270px;
-  margin-right: 100px;
+  margin-right: 50px;
   text-align: justify;
 }
 .footer__form {
@@ -470,6 +467,8 @@ footer {
 }
 .footer__list {
   margin: 0;
+  display: inline-block;
+  margin-right: 55px;
   margin-top: 25px;
 }
 .footer__list li {
@@ -499,10 +498,6 @@ footer {
   position: relative;
   left: -3px;
   padding-right: 20px;
-}
-.footer-list__wrapper {
-  display: flex;
-  justify-content: space-between;
 }
 .footer_rights {
   margin-top: 30px;
