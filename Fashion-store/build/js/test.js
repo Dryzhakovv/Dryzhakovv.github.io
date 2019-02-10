@@ -1,0 +1,1 @@
+var hamburger=document.querySelector(".ham1"),hamburgerMenuElements=document.querySelectorAll(".page-header__nav");hamburger.addEventListener("click",function(){this.classList.toggle("active"),this.classList.contains("active")?hamburgerMenuElements.forEach(function(e){e.style.display="block"}):hamburgerMenuElements.forEach(function(e){e.style.display="none"})});
