@@ -192,7 +192,7 @@
   background: url("../img/sloi1.png") top no-repeat, url("../img/sloi2.png") 55px 10px no-repeat, url("../img/sloi3.png") 65px 20px no-repeat;
   text-align: center;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .main-form__wrapper {
     min-width: 0px;
     background-size: contain;
@@ -200,7 +200,7 @@
     margin-top: 160px;
   }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .main-form__wrapper {
     min-width: 0px;
     background-size: contain;
@@ -353,10 +353,8 @@
   border-radius: 35px;
   width: 70px;
   height: 70px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 47%;
+  left: 47%;
 }
 .prof-team__btn:focus {
   outline: none;
@@ -699,7 +697,7 @@
   color: #626262;
 }
 .calculator__m {
-  padding-right: 15px;
+  padding-right: 12px;
   padding-left: 10px;
 }
 .calculator__form {
@@ -726,7 +724,7 @@
 .calculator__block {
   background: #f9f9f9;
   border-radius: 15px;
-  max-width: 380px;
+  max-width: 377px;
   margin: 20px;
   width: 100%;
 }
