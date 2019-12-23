@@ -1,3 +1,5 @@
+let quickMenuList = document.querySelector(".header-menu__wrapper");
+let quickMenuItems = document.querySelectorAll(".header-menu__item");
 let mainNavMenuItems = document.querySelectorAll(".header-menu__item"),
     mainNavMenu = document.querySelector(".header-menu__wrapper");
 quickMenuList.addEventListener("click", function(e) { quickMenuItems.forEach(function(n, t, a) { if (e.target == n) { e.preventDefault(); var i = .3,

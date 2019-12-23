@@ -15,6 +15,18 @@
 </head>
 
 <body>
+    <div class="overlay ">
+        <nav class="overlayMenu">  
+            <ul role="menu">
+                <li><a class="header-menu__item" href="#about" role="menuitem">О нас</a></li>
+                <li><a class="header-menu__item" href="#services" role="menuitem">услуги</a></li>
+                <li><a class="header-menu__item" href="#calc" role="menuitem">Калькулятор Услуг</a>></li>
+                <li><a class="header-menu__item" href="#portfolio" role="menuitem">Наши работы</a></li>
+                <li><a class="header-menu__item" href="#feedback" role="menuitem">Обратная связь</a></li>
+                <li><a class="header-menu__item" href="#contacts" role="menuitem">Контакты</a>></li>
+            </ul>
+        </nav>
+      </div>
   <header class="header header-parallax" data-parallax="scroll" data-image-src="img/main-bg.jpg">
     <div class="header-nav container-fluid justify-content-center">
       <div class="main-logo">
@@ -23,16 +35,14 @@
       <div class="header-menu">
         <div class="header-menu__wrapper">
           <button type="button" class="navbar-toggle collapsed " aria-expanded="false">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="header-menu__item" href="#about">О нас</a>
-          <a class="header-menu__item" href="#services">услуги</a>
-          <a class="header-menu__item" href="#calc">Калькулятор Услуг</a>
-          <a class="header-menu__item" href="#portfolio">Наши работы</a>
-          <a class="header-menu__item" href="#feedback">Обратная связь</a>
-          <a class="header-menu__item" href="#contacts">Контакты</a>
+            <div class="navBurger" role="navigation" id="navToggle"></div> 
+          </button>          
+          <a class="header-menu__item mobile-hidden" href="#about">О нас</a>
+          <a class="header-menu__item mobile-hidden" href="#services">услуги</a>
+          <a class="header-menu__item mobile-hidden" href="#calc">Калькулятор Услуг</a>
+          <a class="header-menu__item mobile-hidden" href="#portfolio">Наши работы</a>
+          <a class="header-menu__item mobile-hidden" href="#feedback">Обратная связь</a>
+          <a class="header-menu__item mobile-hidden" href="#contacts">Контакты</a>
         </div>
       </div>
     </div>
@@ -122,7 +132,7 @@
           <div class="col-12">
             <div class="prof-team__video ">
               <button type="submit" class="prof-team__btn popup-open-video">
-                <img src="img/play-button.png" alt="" width="60px" height="60px">
+                <img src="img/play-button.png" alt="" width="50px" height="50px">
               </button>
             </div>
           </div>
@@ -526,7 +536,7 @@
   </div>
   <div class="popup-fade-video">
     <video class="popup-video" controls="controls">
-        <source src="img/The Less I Know The Better - Tame Impala.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+        <source src="video/The Less I Know The Better - Tame Impala.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
     </video>
   </div>
 
