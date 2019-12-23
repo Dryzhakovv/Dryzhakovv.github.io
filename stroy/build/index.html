@@ -27,12 +27,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="header-menu__item">О нас</div>
-          <div class="header-menu__item">услуги</div>
-          <div class="header-menu__item">Калькулятор Услуг</div>
-          <div class="header-menu__item">Наши работы</div>
-          <div class="header-menu__item">Обратная связь</div>
-          <div class="header-menu__item">Контакты</div>
+          <a class="header-menu__item" href="#about">О нас</a>
+          <a class="header-menu__item" href="#services">услуги</a>
+          <a class="header-menu__item" href="#calc">Калькулятор Услуг</a>
+          <a class="header-menu__item" href="#portfolio">Наши работы</a>
+          <a class="header-menu__item" href="#feedback">Обратная связь</a>
+          <a class="header-menu__item" href="#contacts">Контакты</a>
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@
             <img src="img/main-form-picturer.png" alt="" class="main-form__img">
             <input type="text" class="main-form__input" placeholder="Ваше имя">
             <input type="tel" class="main-form__input" placeholder="Номер телефона">
-            <button type="submit" class="main-form__btn btn">
+            <button type="submit" class="main-form__btn btn popup-open">
               Связаться с нами!
             </button>
             <span class="add-info">Нажимая на кнопку вы принимаете <br> условия
@@ -81,7 +81,7 @@
     </div>
   </header>
   <main>
-    <div class="prof-team__wrapper">
+    <div class="prof-team__wrapper" id="about">
       <div class="container prof-team">
         <div class="row">
           <div class="col-12 col-xl-4">
@@ -121,8 +121,8 @@
         <div class="row">
           <div class="col-12">
             <div class="prof-team__video ">
-              <button type="submit" class="prof-team__btn">
-                <div class="start-click"></div>
+              <button type="submit" class="prof-team__btn popup-open-video">
+                <img src="img/play-button.png" alt="" width="60px" height="60px">
               </button>
             </div>
           </div>
@@ -216,7 +216,7 @@
         </div>
       </div>
     </div>
-    <div class="services">
+    <div class="services" id="services">
       <div class="container">
         <h3 class="services__heading">Услуги нашей компании</h3>
         <div class="row services__wrapper">
@@ -271,7 +271,7 @@
         </div>
       </div>
     </div>
-    <div class="calc-parallax calculator" data-parallax="scroll" data-image-src="img/calc-bg.jpg">
+    <div class="calc-parallax calculator" data-parallax="scroll" data-image-src="img/calc-bg.jpg" id="calc">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -286,24 +286,26 @@
                       Внутрення штукатурка
                     </h5>
                     <div class="calculator__input-item">
-                      <label for="" class="calculator__label">Площадь стен (Гипсовая штукатурка)</label>
-                      <input type="number" class="calculator__input" placeholder="от 0 до 5000 кв.м "><span class="calculator__m">m
+                      <label for="input__S1" class="calculator__label">Площадь стен (Гипсовая штукатурка)</label>
+                      <input type="number" class="calculator__input" id="input__S1" placeholder="от 0 до 5000 кв.м " max="5000" min="0"><span class="calculator__m">m
                         <sup><small>3</small></sup></span>
                     </div>
                     <div class="calculator__input-item">
-                      <label for="" class="calculator__label">Площадь потолка (Гипсовая штукатурка)</label>
-                      <input type="number" class="calculator__input" placeholder="от 0 до 5000 кв.м "><span class="calculator__m">m
+                      <label for="input__S2" class="calculator__label">Площадь потолка (Гипсовая штукатурка)</label>
+                      <input type="number" class="calculator__input" id="input__S2" placeholder="от 0 до 5000 кв.м " max="5000" min="0"><span class="calculator__m">m
                         <sup><small>3</small></sup></span>
                     </div>
                     <div class="calculator__input-item">
                       <label for="" class="calculator__label">Толщина слоя</label>
-                      <select name="" class="calculator__select">
+                      <select name="" id="sq__s1" class="calculator__select">
                         <option value="" disabled="" selected="">Выберите</option>
-                        <option value="">10000</option>
-                        <option value="">10000</option>
-                        <option value="">10000</option>
-                        <option value="">10000</option>
-                        <option value="">10000</option>
+                        <option value="0">0</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
                       </select>
                     </div>
                   </div>
@@ -314,24 +316,26 @@
                     Декоративная штукатурка
                   </h5>
                   <div class="calculator__input-item">
-                    <label for="" class="calculator__label">Площадь стен (Гипсовая штукатурка)</label>
-                    <input type="number" class="calculator__input" placeholder="от 0 до 5000 кв.м "><span class="calculator__m">m
+                    <label for="input__G1" class="calculator__label">Площадь стен (Гипсовая штукатурка)</label>
+                    <input type="number" class="calculator__input" id="input__G1" placeholder="от 0 до 5000 кв.м " max="5000" min="0"><span class="calculator__m">m
                       <sup><small>3</small></sup></span>
                   </div>
                   <div class="calculator__input-item">
-                    <label for="" class="calculator__label">Площадь потолка (Гипсовая штукатурка)</label>
-                    <input type="number" class="calculator__input" placeholder="от 0 до 5000 кв.м "><span class="calculator__m">m
+                    <label for="input__G2" class="calculator__label">Площадь потолка (Гипсовая штукатурка)</label>
+                    <input type="number" class="calculator__input" id="input__G2" placeholder="от 0 до 5000 кв.м " max="5000" min="0"><span class="calculator__m">m
                       <sup><small>3</small></sup></span>
                   </div>
                   <div class="calculator__input-item">
                     <label for="" class="calculator__label">Толщина слоя</label>
-                    <select name="" class="calculator__select">
+                    <select name="" id="sq__g1" class="calculator__select">
                       <option value="" disabled="" selected="">Выберите</option>
-                      <option value="">1000</option>
-                      <option value="">2000</option>
-                      <option value="">3000</option>
-                      <option value="">400</option>
-                      <option value="">50000</option>
+                      <option value="0">0</option>
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                      <option value="25">25</option>
+                      <option value="30">30</option>
                     </select></div>
                 </div>
                 <div class="calculator__block">
@@ -339,24 +343,26 @@
                     Фасадная штукатурка
                   </h5>
                   <div class="calculator__input-item">
-                    <label for="" class="calculator__label">Площадь стен (Гипсовая штукатурка)</label>
-                    <input type="number" class="calculator__input" placeholder="от 0 до 5000 кв.м "><span class="calculator__m">m
+                    <label for="input__F1" class="calculator__label">Площадь стен (Гипсовая штукатурка)</label>
+                    <input type="number" class="calculator__input" id="input__F1" placeholder="от 0 до 5000 кв.м " max="5000" min="0"><span class="calculator__m">m
                       <sup><small>3</small></sup></span>
                   </div>
                   <div class="calculator__input-item">
-                    <label for="" class="calculator__label">Площадь потолка (Гипсовая штукатурка)</label>
-                    <input type="number" class="calculator__input" placeholder="от 0 до 5000 кв.м "><span class="calculator__m">m
+                    <label for="input__F2" class="calculator__label">Площадь потолка (Гипсовая штукатурка)</label>
+                    <input type="number" class="calculator__input" id="input__F2" placeholder="от 0 до 5000 кв.м " max="5000" min="0"><span class="calculator__m">m
                       <sup><small>3</small></sup></span>
                   </div>
                   <div class="calculator__input-item">
                     <label for="" class="calculator__label">Толщина слоя</label>
-                    <select name="" class="calculator__select">
+                    <select name="" id="sq__f1" class="calculator__select">
                       <option value="" disabled="" selected="">Выберите</option>
-                      <option value="">10000</option>
-                      <option value="">10000</option>
-                      <option value="">10000</option>
-                      <option value="">10000</option>
-                      <option value="">10000</option>
+                      <option value="0">0</option>
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                      <option value="25">25</option>
+                      <option value="30">30</option>
                     </select>
                   </div>
                 </div>
@@ -364,37 +370,37 @@
                   <h5 class="calculator__block-heading">Утипления фасада</h5>
                   <div class="calculator__input-item">
                     <label for="" class="calculator__label">Площадь стен (Пеноблоки 1кв.м)</label>
-                    <input type="text" class="calculator__input">
+                    <input type="text" id="sqWarm" class="calculator__input">
                   </div>
                 </div>
               </div>
               <div class="calculator__output-forms">
                 <h3 class="calculator-price__heading">Стоимость услуги</h3>
-                <p class="calculator-price"><span class="calculator-price__money"></span>руб</p>
-                <button class="calculator__btn" type="submit" disabled="">Добавить заказ</button>
+                <p class="calculator-price"><span class="calculator-price__money"></span> руб</p>
+                <button class="calculator__btn" type="submit">Добавить заказ</button>
                 <h3 class="calculator-service__heading">Ваши заказы</h3>
                 <p class="calculator-service">Список услуг:</p>
                 <div class="calculator-service__block">
-                  <p class="calculator-service__price"></p><span class="cancel"></span><span class="cancel"></span>
+                  <p class="calculator-service__price" id="first"></p><span class="cancel"></span><span class="cancel"></span>
                 </div>
                 <div class="calculator-service__block">
-                  <p class="calculator-service__price"></p><span class="cancel"></span><span class="cancel"></span>
+                  <p class="calculator-service__price" id="second"></p><span class="cancel"></span><span class="cancel"></span>
                 </div>
                 <div class="calculator-service__block">
-                  <p class="calculator-service__price"></p><span class="cancel"></span><span class="cancel"></span>
+                  <p class="calculator-service__price" id="third"></p><span class="cancel"></span><span class="cancel"></span>
                 </div>
                 <div class="calculator-service__block">
-                  <p class="calculator-service__price"></p><span class="cancel"></span><span class="cancel"></span>
+                  <p class="calculator-service__price" id="fourth"></p><span class="cancel"></span><span class="cancel"></span>
                 </div>
                 <p class="calculator-total">Итого:<span class="total-price"></span></p>
-                <button class="calculator-service__btn ">Оставить заявку</button>
+                <button class="calculator-service__btn popup-open ">Оставить заявку</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <div class="container">
         <h3 class="portfolio__heading">Самые популярные работы
         </h3>
@@ -444,7 +450,7 @@
     </div>
   </main>
   <footer>
-    <div class="upper-footer">
+    <div class="upper-footer" id="feedback">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-lg-5 col-12">
@@ -468,7 +474,7 @@
         </div>
       </div>
     </div>
-    <div class="middle-footer">
+    <div class="middle-footer" id="contacts">
       <div class="container">
         <div class="row">
           <div class="offset-lg-2 col-lg-8 col-12">
@@ -477,7 +483,7 @@
             </h3>
             <form action="" class="middle-footer__form">
               <input type="text" class="middle-footer__input" placeholder="Электронный адрес">
-              <button class="middle-footer__btn">Подписаться</button>
+              <button class="middle-footer__btn popup-open">Подписаться</button>
             </form>
           </div>
         </div>
@@ -503,15 +509,81 @@
       </div>
     </div>
   </footer>
+
+
+
+  <div class="popup-fade">
+    <div class="popup">
+      <form action="" class="popup-form">
+        <a class="popup-close" href="#"></a>
+        <h4 class="popup-heading">Оставьте заявку</h4>
+        <p class="popup-text">и мы вам перезвоним</p>
+        <label for="" class="popup-label">Ваше имя</label><input type="text" class="popup-input">
+        <label for="" class="popup-label">Номер телефона</label><input type="tel" class="popup-input">
+        <button type="submit" class="popup-btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup-fade-video">
+    <video class="popup-video" controls="controls">
+        <source src="img/The Less I Know The Better - Tame Impala.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+    </video>
+  </div>
+
+
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/navigation-menu.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/scroll-menu.js"></script>
   <script>
-  $('.parallax-window').parallax({imageSrc: 'img/advantages-bg.jps.jpg'});
-  $('.calculator').parallax({imageSrc: 'img/calc-bg.jpg'});
-  $('.header-parallax').parallax({imageSrc: 'img/main-bg.jpg'});
+    $('.parallax-window').parallax({
+      imageSrc: 'img/advantages-bg.jps.jpg'
+    });
+    $('.calculator').parallax({
+      imageSrc: 'img/calc-bg.jpg'
+    });
+    $('.header-parallax').parallax({
+      imageSrc: 'img/main-bg.jpg'
+    });
+
+    $(document).ready(function ($) {
+      $('.popup-open').click(function () {
+        $('.popup-fade').fadeIn();
+        return false;
+      });
+
+       $('.popup-open-video').click(function () {
+        $('.popup-fade-video').fadeIn();
+        return false;
+      });
+
+      $('.popup-close').click(function () {
+        $(this).parents('.popup-fade').fadeOut();
+        $(this).parents('.popup-fade-video').fadeOut();
+        return false;
+      });
+
+      $(document).keydown(function (e) {
+        if (e.keyCode === 27) {
+          e.stopPropagation();
+          $('.popup-fade').fadeOut();
+        }
+      });
+
+      $('.popup-fade').click(function (e) {
+        if ($(e.target).closest('.popup').length == 0) {
+          $(this).fadeOut();
+        }
+      });
+      $('.popup-fade-video').click(function (e) {
+        if ($(e.target).closest('.popup').length == 0) {
+          $(this).fadeOut();
+        }
+      });
+    });
   </script>
 
 </body>
